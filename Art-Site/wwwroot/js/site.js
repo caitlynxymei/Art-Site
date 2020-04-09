@@ -1,4 +1,11 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$(document).ready(function () {
+    $("#photo").mouseover(function () {
+        $("#photo").fadeTo(1000, 0.30, function () {
+            $("#photo").attr("src", "Images/Rose.jpg");
+        }).fadeTo(1000, 1);
+    });
 
-// Write your Javascript code.
+    //$("#photo").mouseout(function () {
+    //    $("#photo").fadeOut("slow");
+    //});
+});
